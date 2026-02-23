@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Animacion në JavaScript</title>
+
+<script>
+var imgObj = null;
+
+function init() {
+    imgObj = document.getElementById("Imazhi");
+    imgObj.style.position = "relative";
+    imgObj.style.left = "0px";
+}
+
+function moveRight() {
+    imgObj.style.left = parseInt(imgObj.style.left) + 15 + "px";
+}
+
+window.onload = init;
+</script>
+
+</head>
+
+<body>
+
+<img id="Imazhi" src="https://media.licdn.com/dms/image/v2/D4D0BAQEX0sOB9936sg/company-logo_200_200/company-logo_200_200/0/1729537735561?e=2147483647&v=beta&t=0b6UafQ-DcW6yjKAhIu9sT2GSofI3v6KFOXYuzEJ050" alt="Figura">
+
+<p>Kliko butonin për të lëvizur figurën djathtas</p>
+
+<input type="button" value="Click Me" onclick="moveRight()">
+
+</body>
+</html>
+
+
